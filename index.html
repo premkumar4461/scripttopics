@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a {
+        margin-left: 30px;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #999;
+    }
+</style>
+
+<body>
+    <div id=navbar></div>
+</body>
+
+
+<script>
+    var links = [{
+        name: "facebook",
+        source: "https://www.facebook.com"
+    }, {
+        name: "gmail",
+        source: "https://www.gmail.com"
+    }, {
+        name: "yahoo",
+        source: "https://www.yahoo.com"
+    }, {
+        name: "linkedin",
+        source: "https://www.linkedin.com"
+    }, {
+        name: "youtube",
+        source: "https://www.youtube.com"
+    }, ]
+    var link = document.getElementById("navbar");
+    links.forEach(function(link) {
+        navbar.innerHTML = navbar.innerHTML + link.name.link(link.source);
+
+    });
+</script>
+
+</html>

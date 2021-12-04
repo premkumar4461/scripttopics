@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        enter emailid: <input type="text" id="emailid" size="20">
+        <button onclick="emailidcheck()">submit</button>
+    </form>
+</body>
+<script>
+    function emailidcheck() {
+        event.preventDefault();
+        let eid = document.getElementById("emailid").value;
+        email = eid.toLowerCase();
+        email = eid.trim();
+
+        console.log('email', email);
+
+        if (!email.endsWith('@gmail.com')) {
+            email = email.concat("@gmail.com");
+        }
+        document.getElementById("emailid").value = email;
+
+    }
+</script>
+
+</html>
